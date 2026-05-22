@@ -1,0 +1,254 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    background-color: #D0D2DB;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #1d3f93;
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    box-shadow: 0 8px 20px black;
+}
+
+.site-name {
+    color: white;
+    font-family: sans-serif;
+    font-weight: 600;
+    font-size: 30px;
+}
+
+.links {
+    display: flex;
+    gap: 40px;
+    font-size: 20px;
+    font-weight: bolder;
+}
+
+.links a{
+    text-decoration: none;
+    color: white;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    transition: all 0.2s ease;
+}
+
+.links a:hover  {
+    background-color: white;
+    border-radius: 10px;
+    opacity: 0.3;
+    color: #1d3f93;
+    transition: 0.3s;
+    transform: translate(15%, -30%);
+}
+
+input {
+    width: 300px;
+    padding: 8px;
+    border-radius: 10px;
+    border: 2px solid;
+    border-color: black;
+    outline: none;
+}
+
+input::placeholder {
+    padding-top: 10px;
+    padding-left: 15px;
+    margin-top: 10px;
+    font-size: large;
+    justify-content: center;
+}
+
+
+.first-row {
+    position: relative;
+    background-image: url(images/MMM1.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 300px;
+    margin-top: 10px;
+    margin-right: 10px;
+    margin-left: 10px;
+    margin-bottom: 20px;
+    padding: 10px;
+    color: white;
+    line-height: 40px;
+    border-radius: 10px;
+    text-align: justify;
+    box-shadow: 8px 8px 20px black;
+}
+
+.button {
+    padding: 20px 60px;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-bottom: 10px;
+    border-radius: 15px;
+    opacity: 0.8;
+    color: black;
+    font-weight: 600;
+    font-size: larger;
+    cursor: pointer;
+    transition: all 0.2s ease;
+
+}
+
+.button:hover {
+    background-color: black;
+    color: white;
+    transition: 0.2s;
+    border: 2px white solid;
+}
+
+.second-row {
+    display: flex;
+    justify-content: space-between;
+    margin: 10px;
+    padding: 10px;
+}
+
+.img {
+    width: 500px;
+    height: 350px;
+    border-radius: 10px;
+
+}
+
+.b {
+    width: 400px;
+    height: 250px;
+    border-radius: 10px;
+}
+
+.h {
+    width: 400px;
+    height: 250px;
+    border-radius: 10px;
+
+}
+
+.second-row img{
+    display: flex;
+    flex-direction: column;
+    box-shadow: 8px 8px 20px black;
+}
+
+.button1 {
+    margin-top: 50px;
+    width: 400px;
+    padding: 15px;
+    font-size: larger;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 10px;
+    transition: all 0.2s ease;
+
+}
+
+.button1:hover {
+    background-color: black;
+    color: white;
+    transition: 0.2s;
+    border: 3px white solid;
+}
+
+.third-row {
+    display: flex;
+    justify-content: space-between;
+    margin: 10px;
+    padding: 10px;
+}
+
+.third-row img {
+    width: 350px;
+    height: 350px;
+    border-radius: 10px;
+    box-shadow: 8px 8px 20px black;
+}
+
+.fourth-row {
+    background-image: url(images/P0006.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 20px;
+    padding: 10px;
+    color: white;
+    height: 400px;
+    position: relative;
+    line-height: 40px;
+    border-radius: 10px;
+    text-align: justify;
+    box-shadow: 8px 8px 20px black;
+}
+
+.button2 {
+    width: 400px;
+    padding: 15px;
+    font-size: larger;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 10px;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-bottom: 10px;
+    transition: all 0.2s ease;
+
+}
+
+.button2:hover {
+    background-color: black;
+    color: white;
+    transition: 0.2s;
+    border: 3px white solid;
+}
+
+@media (max-width: 450px) {
+
+    .navbar {
+        flex-direction: column;
+    }
+
+    .links {
+        gap: 20px;
+    }
+
+    .first-row {
+        line-height: normal;
+        height: unset;
+        /* width: 100%; */
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .second-row {
+        flex-direction: column;
+    }
+
+    .third-row {
+        flex-direction: column;
+    }
+
+    .third-row img {
+        width: 100%;
+    }
+
+    .fourth-row {
+        line-height: normal;
+        height: unset;
+    }
+
+    .img {
+        width: 100%;
+    }
+}
