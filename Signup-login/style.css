@@ -1,0 +1,153 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto';
+}
+
+html,
+body {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: url(images/coconut.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.container {
+    height: 380px;
+    width: 360px; 
+    padding: 30px;
+    background-color: transparent;
+    display: flex;
+    flex-direction: column;
+    backdrop-filter: blur(8px);
+    border: 2px solid white;
+    border-radius: 15px;
+}
+
+@media (max-width:480px) {
+    .container {
+        max-width: 320px;
+        padding: 15px;
+    }
+
+    .recognition-forget-box {
+        width: 100%;
+    }
+
+    .recognition-forget-box a {
+        margin-left: 0px;
+    }
+}
+
+.login {
+    margin: 30px 0;
+    text-align: center;
+    font-weight: 600;
+    font-size: x-large;
+    color: whitesmoke;
+}
+
+.user-box {
+    position: relative;
+    background-color: transparent;
+    border: none;
+    border-bottom: 2px solid greenyellow;
+    margin-bottom: 25px;
+}
+
+
+.user-box input {
+    height: 100%;
+    width: 90%;
+    padding-top: 12px;
+    padding-left: 10px;
+    padding-bottom: 0;
+    padding-right: 0;
+    background-color: transparent;
+    outline: none;
+    border: none;
+    left: 10px;
+    font-size: 17px;
+    color: white;
+    font-weight: 500;
+}
+
+.user-box label {
+    position: absolute;
+    color: white;
+    bottom: 4px;
+    left: 10px;
+    font-size: large;
+    pointer-events: none;
+    transition: 0.3s ease;
+}
+
+.password-box {
+    margin-bottom: 10px;
+}
+
+.user-box input:focus + label,
+.user-box input:valid + label {
+    top: -9px;
+    font-size: 15px;
+    color: greenyellow;
+}
+
+.recognition-forget-box {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    font-size: medium;
+    color: white;
+    text-align: center;
+    margin: 0 auto;
+}
+
+@media (min-width:482px) {
+    .recognition-forget-box {
+        width: 90%;
+    }
+}
+
+.recognition-forget-box a {
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+#recognition {
+    outline: none;
+    width: 14px;
+}
+
+.login-link {
+    display: inline-block;
+    border-radius: 30px;
+    padding: 6px 0;
+    width: 100%;
+    background-color: aliceblue;
+    text-align: center;
+    cursor: pointer;
+    font-weight: 600;font-size: 18px;
+    margin-bottom: 20px;
+    margin-top: 10px;
+    color: blue;
+}
+
+.register  {
+    color: white;
+    font-size: medium;
+    text-align: center;
+}
+
+.register a {
+    color: white;
+    text-decoration: none;
+    font-weight: 700;
+}
